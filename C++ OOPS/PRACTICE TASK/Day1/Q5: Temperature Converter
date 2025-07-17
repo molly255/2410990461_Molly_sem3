@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+class TempConverter {
+public:
+    float celsiusToFahrenheit(float c) { return (c * 9 / 5) + 32; }
+    float celsiusToKelvin(float c) { return c + 273.15; }
+
+    float fahrenheitToCelsius(float f) { return (f - 32) * 5 / 9; }
+    float fahrenheitToKelvin(float f) { return (f - 32) * 5 / 9 + 273.15; }
+
+    float kelvinToCelsius(float k) { return k - 273.15; }
+    float kelvinToFahrenheit(float k) { return (k - 273.15) * 9 / 5 + 32; }
+};
+
+int main() {
+    TempConverter t;
+    int choice;
+    float input;
+
+    cout << "1. C to F\n2. C to K\n3. F to C\n4. F to K\n5. K to C\n6. K to F\nEnter choice: ";
+    cin >> choice;
+
+    cout << "Enter value: ";
+    cin >> input;
+
+    switch (choice) {
+        case 1: cout << "Fahrenheit: " << t.celsiusToFahrenheit(input); break;
+        case 2: cout << "Kelvin: " << t.celsiusToKelvin(input); break;
+        case 3: cout << "Celsius: " << t.fahrenheitToCelsius(input); break;
+        case 4: cout << "Kelvin: " << t.fahrenheitToKelvin(input); break;
+        case 5: cout << "Celsius: " << t.kelvinToCelsius(input); break;
+        case 6: cout << "Fahrenheit: " << t.kelvinToFahrenheit(input); break;
+        default: cout << "Invalid choice!";
+    }
+
+    return 0;
+}
