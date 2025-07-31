@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <h2>Required Fields are denoted by "*"</h2>
+
+  <form>
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      First Name *: <input type="text" name="fname" required>
+      &nbsp;&nbsp;
+      Last Name *: <input type="text" name="lname" required><br><br>
+
+      Date of Birth (DOB) *: <input type="date" name="dob" required>
+      &nbsp;&nbsp;
+      Age *: <input type="number" name="age" required><br><br>
+
+      Gender *:
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <input type="radio" name="gender" value="Others"> Others
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+
+      Phone Number *: <input type="tel" name="phone" required>
+      &nbsp;&nbsp;
+      E-mail ID *: <input type="email" name="email" required>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Address Details</legend>
+
+      Address *: <input type="text" name="address" required>
+      &nbsp;&nbsp;
+      State *: <input type="text" name="state" required><br><br>
+
+      City *: <input type="text" name="city" required>
+      &nbsp;&nbsp;
+      Pincode *: <input type="text" name="pincode" required>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Login Detail</legend>
+
+      User-Name *: <input type="text" name="username" required>
+      &nbsp;&nbsp;
+      Password *: <input type="password" name="password" required>
+
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>

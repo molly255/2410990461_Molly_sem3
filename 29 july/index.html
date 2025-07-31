@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Multimedia Tags Demonstration</title>
+ 
+</head>
+<body>
+
+  <h1>HTML Multimedia Tags Demonstration</h1>
+
+  <!-- VIDEO TAG -->
+  <section>
+    <h2>🎬 Video: with multiple formats, poster, & subtitles</h2>
+    <video width="640" height="360" controls autoplay loop poster="n1.jpg" preload="metadata">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+      <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- AUDIO TAG -->
+  <section>
+    <h2>🎧 Audio: with multiple sources and controls</h2>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      <source src="audio.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+
+  <!-- 📄 OBJECT TAG with Fallback -->
+  <section>
+    <h2>📄 Object Tag: for PDF File with Fallback</h2>
+
+    <object data="Abstract- ES&IOT (2).pdf" type="application/pdf" width="700" height="480">
+      <p>PDF cannot be displayed. 
+        <a href="Abstract- ES&IOT (2).pdf" target="_blank">Download PDF</a>
+      </p>
+    </object>
+  </section>
+
+  <!-- 📄 EMBED TAG for PDF -->
+  <section>
+    <h2>📄 Embed Tag: for PDF File</h2>
+
+    <embed src="Abstract- ES&IOT (2).pdf      " width="700" height="480" type="application/pdf">
+  </section>
+
+  <!-- ▶ IFRAME TAG for YouTube and Google Maps -->
+  <section>
+    <h2>▶ Iframe Tag: for embedding YouTube and Google Maps</h2>
+
+    <!-- YouTube Video -->
+    <h3>YouTube Video:</h3>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/_rvftsZxuhc?cc_load_policy=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+
+    <!-- Google Map -->
+    <h3>Google Map:</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14074.889482344663!2d76.5740625!3d28.9874115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDU5JzE0LjciTiA3NsKwMzQnMjYuNiJF!5e0!3m2!1sen!2sin!4v1694090419553!5m2!1sen!2sin" 
+      width="560" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+</body>
+</html> 

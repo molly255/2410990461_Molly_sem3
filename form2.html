@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f6f1;
+      padding: 20px;
+    }
+
+    h2 {
+      color: red;
+    }
+
+    fieldset {
+      border: 1px solid #aaa;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #444;
+    }
+
+    label {
+      display: inline-block;
+      width: 130px;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"] {
+      padding: 5px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-left: 10px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 8px 15px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    input[type="reset"] {
+      background-color: #ae1c20;
+      color: white;
+    }
+
+    .required {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Required Fields are denoted by <span class="required">*</span></h2>
+
+  <form>
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label>First Name<span class="required">*</span>:</label>
+      <input type="text" name="fname" required>
+
+      <label>Last Name<span class="required">*</span>:</label>
+      <input type="text" name="lname" required><br>
+
+      <label>Date of Birth<span class="required">*</span>:</label>
+      <input type="date" name="dob" required>
+
+      <label>Age<span class="required">*</span>:</label>
+      <input type="number" name="age" required><br>
+
+      <label>Gender<span class="required">*</span>:</label>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <input type="radio" name="gender" value="Others"> Others
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+
+      <label>Phone Number<span class="required">*</span>:</label>
+      <input type="tel" name="phone" required>
+
+      <label>E-mail ID<span class="required">*</span>:</label>
+      <input type="email" name="email" required>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Address Details</legend>
+
+      <label>Address<span class="required">*</span>:</label>
+      <input type="text" name="address" required>
+
+      <label>State<span class="required">*</span>:</label>
+      <input type="text" name="state" required><br>
+
+      <label>City<span class="required">*</span>:</label>
+      <input type="text" name="city" required>
+
+      <label>Pincode<span class="required">*</span>:</label>
+      <input type="text" name="pincode" required>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Login Detail</legend>
+
+      <label>User-Name<span class="required">*</span>:</label>
+      <input type="text" name="username" required>
+
+      <label>Password<span class="required">*</span>:</label>
+      <input type="password" name="password" required>
+
+    </fieldset>
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+
+  </form>
+
+</body>
+</html>
