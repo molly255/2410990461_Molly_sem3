@@ -1,0 +1,28 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 200px;
+  border: 2px solid #ccc;
+}
+
+.box {
+  color: rgb(229, 218, 218);
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  flex: 0 0 150px;
+}
+
+.box:nth-child(1) {
+  background-color: #af9b4c; 
+}
+.box:nth-child(2) {
+  background-color: #4caf50; 
+}
+.box:nth-child(3) {
+  background-color: #2196f3; 
+}
