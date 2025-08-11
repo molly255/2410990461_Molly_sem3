@@ -1,0 +1,51 @@
+ body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 350px;                  /* Content width */
+    margin: 40px auto;              /* Space outside the box + center horizontally */
+    padding: 20px;                  /* Space inside before the border */
+
+    background-color: white;        /* Content area color */
+
+    /* Borders for each side */
+    border-top: 3px solid brown;         /* Top border */
+    border-right: 6px dashed navy;       /* Right border */
+    border-bottom: 6px dotted gray;      /* Bottom border */
+    border-left: 3px solid green;        /* Left border */
+
+    border-radius: 10px;             /* Rounded corners */
+
+    text-align: center;              /* Center text horizontally */
+    font-size: 18px;
+    color: #555;
+} 
+
+/* Default (Mobile First) */
+body {
+    background-color: lightblue;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Between 600px and 1023px (Tablet) */
+@media (min-width: 600px) and (max-width: 1023px) {
+    body {
+        background-color: lightgreen;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+/* 1024px and above (Desktop) */
+@media (min-width: 1024px) {
+    body {
+        background-color: lightcoral;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,50 @@
+/* General styles */
+body {
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Q1: Change background color on screens < 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Q2: Change font size to 20px between 601px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Q3: Hide navigation menu in portrait orientation */
+@media (orientation: portrait) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+/* Q4: Make images scale to 100% width on mobile devices */
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
