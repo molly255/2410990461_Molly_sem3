@@ -1,0 +1,29 @@
+.container {
+      display: flex;         
+      gap: 50px;          
+      margin-top: 50px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      border: 2px solid blue;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+      .random {
+      width: 100px;
+      height: 100px;
+    
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      border: 2px solid rgb(13, 158, 126);
+      border-radius: 10px;
+      display: inline-block;
+    }

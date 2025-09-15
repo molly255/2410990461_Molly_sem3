@@ -40,4 +40,4 @@ function filterLongNames(arr) {
 }   
 filterLongNames(["Alice", "Bob", "Catherine", "David", "Elizabeth"]);
 console.log(filterLongNames(["Alice", "Bob", "Catherine", "David", "Elizabeth"]));
-
+ 
