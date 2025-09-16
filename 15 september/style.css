@@ -27,3 +27,8 @@
       border-radius: 10px;
       display: inline-block;
     }
+
+ .round-border {
+  border: 2px solid black;
+  border-radius: 50%; /* Makes it a circle if width=height */
+}
